@@ -1,49 +1,49 @@
 // actions.js
-export const UPDATE_RUNS = 'UPDATE_RUNS'
-export const UPDATE_BALLING_CARDS = 'UPDATE_BALLING_CARDS'
-export const UPDATE_FILTERED_BATTING_CARDS = 'UPDATE_FILTERED_BATTING_CARDS'
-export const UPDATE_SHOT_TIMINGS = 'UPDATE_SHOT_TIMINGS'
-export const TARGET = 'TARGET'
-export const OVERS = 'OVERS'
-export const WICKETS = 'WICKETS'
-export const BALLS = 'BALLS'
+export const UPDATE_RUNS = 'UPDATE_RUNS';
+export const UPDATE_BALLING_CARDS = 'UPDATE_BALLING_CARDS';
+export const UPDATE_FILTERED_BATTING_CARDS = 'UPDATE_FILTERED_BATTING_CARDS';
+export const UPDATE_SHOT_TIMINGS = 'UPDATE_SHOT_TIMINGS';
+export const TARGET = 'TARGET';
+export const OVERS = 'OVERS';
+export const WICKETS = 'WICKETS';
+export const BALLS = 'BALLS';
 
 export const updateRuns = (runs) => ({
   type: UPDATE_RUNS,
-  payload: runs
-})
+  payload: runs,
+});
 
 export const updateBallingCards = (ballingCards) => ({
   type: UPDATE_BALLING_CARDS,
-  payload: ballingCards
-})
+  payload: ballingCards,
+});
 
 export const updateFilteredBattingCards = (filteredBattingCards) => ({
   type: UPDATE_FILTERED_BATTING_CARDS,
-  payload: filteredBattingCards
-})
+  payload: filteredBattingCards,
+});
 
 export const updateShotTimings = (shotTimings) => ({
   type: UPDATE_SHOT_TIMINGS,
-  payload: shotTimings
-})
+  payload: shotTimings,
+});
 
 export const updateTarget = (target) => ({
   type: TARGET,
-  payload: target
-})
+  payload: target,
+});
 
 export const updateOvers = (overs) => ({
   type: OVERS,
-  payload: overs
-})
+  payload: overs,
+});
 
 export const updateWickets = (wickets) => ({
   type: WICKETS,
-  payload: wickets
-})
+  payload: wickets,
+});
 
 export const updateBalls = (balls) => ({
   type: BALLS,
-  payload: balls
-})
+  payload: balls,
+});

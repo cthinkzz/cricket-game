@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.display-target  {
+.display-target {
   top: 45px;
   position: absolute;
   font-size: 32px;
@@ -19,37 +19,35 @@ code {
   font-weight: 500;
 }
 
-[data-aos="up-show"] {
+[data-aos='up-show'] {
   opacity: 0;
   transition-property: transform, opacity;
-  transform: translate3d(0,10px,0);
+  transform: translate3d(0, 10px, 0);
 
   &.aos-animate {
     opacity: 1;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
+}
 
+[data-aos='left-show'] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translate3d(100%, 0, 0);
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
+}
 
-  [data-aos="left-show"] {
-    opacity: 0;
-    transition-property: transform, opacity;
-    transform: translate3d(100%,0,0);
-  
-    &.aos-animate {
-      opacity: 1;
-      transform: translate3d(0,0,0);
-    }
-  
-    }
+.card-text div p {
+  display: inline-block;
+  font-weight: 500;
+  padding: 5px 10px;
+}
 
-  .card-text div p {
-    display: inline-block;
-    font-weight: 500;
-    padding: 5px 10px;
-  }
-
-  .accordion-header > button {
-    color: black;
-    font-weight: 500;
-  }
+.accordion-header > button {
+  color: black;
+  font-weight: 500;
+}

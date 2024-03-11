@@ -1,4 +1,13 @@
-import { UPDATE_RUNS, UPDATE_BALLING_CARDS, UPDATE_FILTERED_BATTING_CARDS, UPDATE_SHOT_TIMINGS, TARGET, OVERS, WICKETS, BALLS } from './action'
+import {
+  BALLS,
+  OVERS,
+  TARGET,
+  UPDATE_BALLING_CARDS,
+  UPDATE_FILTERED_BATTING_CARDS,
+  UPDATE_RUNS,
+  UPDATE_SHOT_TIMINGS,
+  WICKETS,
+} from './action';
 
 const initialState = {
   runs: 0,
@@ -8,54 +17,54 @@ const initialState = {
   balls: 0,
   ballingCards: [],
   filteredBattingCards: [],
-  shotTimings: []
-}
+  shotTimings: [],
+};
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_RUNS:
       return {
         ...state,
-        runs: action.payload
-      }
+        runs: action.payload,
+      };
     case UPDATE_BALLING_CARDS:
       return {
         ...state,
-        ballingCards: action.payload
-      }
+        ballingCards: action.payload,
+      };
     case UPDATE_FILTERED_BATTING_CARDS:
       return {
         ...state,
-        filteredBattingCards: action.payload
-      }
+        filteredBattingCards: action.payload,
+      };
     case UPDATE_SHOT_TIMINGS:
       return {
         ...state,
-        shotTimings: action.payload
-      }
+        shotTimings: action.payload,
+      };
     case TARGET:
       return {
         ...state,
-        target: action.payload
-      }
+        target: action.payload,
+      };
     case OVERS:
       return {
         ...state,
-        overs: action.payload
-      }
+        overs: action.payload,
+      };
     case WICKETS:
       return {
         ...state,
-        wickets: action.payload
-      }
+        wickets: action.payload,
+      };
     case BALLS:
       return {
         ...state,
-        balls: action.payload
-      }
+        balls: action.payload,
+      };
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default reducer
+export default reducer;
